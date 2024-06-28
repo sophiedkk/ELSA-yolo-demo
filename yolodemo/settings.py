@@ -3,6 +3,7 @@ IMAGE_WIDTH: int = 640
 MINIMUM_CONFIDENCE: float = 0.70
 MODEL: str = "yolo-Weights/yolov8n.pt"  # set to NCNN model for raspberry pi
 NCNN_MODEL: str = "yolo-Weights/yolov8n_ncnn_model"
+MODEL = NCNN_MODEL
 TEST_IMAGE: str = "tests/bus.jpg"
 CLASS_NAMES: list[str] = ["persoon", "fiets", "auto", "motorfiets", "vliegtuig", "bus", "trein", "vrachtwagen", "boot",
                           "verkeerslicht", "brandkraan", "stopbord", "parkeermeter", "bank", "vogel", "kat",

@@ -8,7 +8,9 @@ def capture_frame(device: cv2.VideoCapture):
     if not success:
         return
 
-    print(img)
+    cv2.putText(img, text=f"test", org=[20, 20], fontFace=cv2.FONT_HERSHEY_SIMPLEX,
+            fontScale=1, color=(255, 86, 180), thickness=2)
+    cv2.rectangle(img, (20, 20), (50, 50), color=(214, 66, 71), thickness=3)
     cv2.imshow('Webcam', img)
 
 
