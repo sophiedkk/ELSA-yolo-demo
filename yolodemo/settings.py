@@ -1,6 +1,6 @@
 IMAGE_HEIGHT: int = 640
 IMAGE_WIDTH: int = 640
-MINIMUM_CONFIDENCE: float = 0.70
+MINIMUM_CONFIDENCE: float = 0.30
 MODEL: str = "yolo-Weights/yolov8n.pt"  # set to NCNN model for raspberry pi
 NCNN_MODEL: str = "yolo-Weights/yolov8n_ncnn_model"
 MODEL = NCNN_MODEL

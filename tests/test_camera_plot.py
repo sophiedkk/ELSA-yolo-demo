@@ -15,7 +15,7 @@ def capture_frame(device: cv2.VideoCapture):
 
 
 if __name__ == "__main__":
-    video_capture = cv2.VideoCapture(-1)
+    video_capture = cv2.VideoCapture("tcp://127.0.0.1:8888")
     video_capture.set(3, s.IMAGE_HEIGHT)
     video_capture.set(4, s.IMAGE_WIDTH)
 
