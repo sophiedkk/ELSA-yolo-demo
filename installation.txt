@@ -1,0 +1,9 @@
+git clone https://github.com/sophiedkk/ELSA-yolo-demo.git
+cd ELSA-yolo-demo/
+python -m venv venv
+source venv/bin/activate
+sudo apt update && sudo apt upgrade
+sudo apt install micro
+pip install ultralytics[export] --use-deprecated=legacy-resolver
+rpicam-vid -n -t 0 --inline --listen -o tcp://127.0.0.1:8888
+
